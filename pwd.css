@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F6F7FE;
+    display: flex;
+    flex-direction: column;
+}
+
+.topImg {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgLeft {
+    position: absolute;
+    left: 0;
+}
+
+.imgRight,
+.imgRight2 {
+    position: absolute;
+    right: 0;
+}
+
+.imgRight2 {
+    display: none;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0rem 2rem;
+    margin-top: 15rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.contentHead h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.contentHead p {
+    font-size: .9rem;
+    color: gray;
+}
+
+.contentReset {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 1.01rem;
+    background-image: linear-gradient(to right, #2E85FE, #AF2EE6);
+}
+
+.ignore {
+    font-size: .8rem;
+    font-weight: 600;
+    margin: 1rem 0rem;
+}
+
+.ignore span {
+    text-decoration: underline;
+}
+
+.contentLine {
+    display: block;
+    height: 1px;
+    width: 350px;
+    background-color: #E5E5E5;
+}
+
+.contentIcons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+@media (width<=820px) {
+    .imgLeft {
+        left: -8rem;
+    }
+    .imgRight {
+        display: none;
+    }
+    .imgRight2 {
+        display: block;
+        height: 20rem;
+    }
+    .mainContent {
+        padding: 0rem;
+        margin-top: 22rem;
+    }
+    .mainContent h1 {
+        font-size: 2rem;
+    }
+    .content p {
+        font-size: .8rem;
+    }
+    .ignore {
+        font-size: .7rem;
+        padding: 0rem 2rem;
+    }
+    .contentLine {
+        width: 80%;
+    }
+    .mainContent img {
+        display: none;
+    }
+}
+
+@media (width<400px) {
+    .imgLeft {
+        left: -4.5rem;
+        height: 12rem;
+    }
+    .imgRight2 {
+        height: 15rem;
+    }
+}
+
+@media (width<300px) {
+    .imgLeft {
+        left: -6rem;
+        height: 12rem;
+    }
+    .imgRight2 {
+        height: 15rem;
+    }
+    .contentHead h1 {
+        font-size: 1.5rem;
+    }
+    .contentReset {
+        font-size: .9rem;
+    }
+    .content p {
+        font-size: .6rem;
+    }
+}
